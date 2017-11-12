@@ -11,6 +11,7 @@ public class User {
     public User(String name, Integer points) {
         this.name = name;
         this.points = points;
+        this.moderator = false;
     }
 
     public String getName() {
@@ -35,6 +36,15 @@ public class User {
 
     public void setModerator(Boolean moderator) {
         this.moderator = moderator;
+    }
+
+    @Override
+    public String toString() {
+        return "User {" +
+                "name='" + name + '\'' +
+                ", points=" + points +
+                ", moderator=" + moderator +
+                '}';
     }
 
     @Override

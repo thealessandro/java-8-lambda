@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class Chapter2 {
 
-    public static void main(String[] args) {
+    public void exampleForEach() {
         User user1 = new User("Jonh", 150);
         User user2 = new User("Maria", 120);
         User user3 = new User("Mark", 190);
@@ -44,7 +44,9 @@ public class Chapter2 {
         System.out.println("-----------------");
 
         System.out.println("#5");
-        Consumer<User> consumer3 = (User user) -> {System.out.println(user.getName());};
+        Consumer<User> consumer3 = (User user) -> {
+            System.out.println(user.getName());
+        };
         users.forEach(consumer3);
         System.out.println("-----------------");
 

@@ -1,4 +1,4 @@
-package br.com.kyxadious.test;
+package br.com.kyxadious.test.chapter.two;
 
 import br.com.kyxadious.chapter.two.User;
 import org.junit.Test;
