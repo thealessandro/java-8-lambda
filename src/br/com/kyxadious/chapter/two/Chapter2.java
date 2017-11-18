@@ -1,17 +1,17 @@
 package br.com.kyxadious.chapter.two;
 
+import br.com.kyxadious.chapter.common.entity.User;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
+import static br.com.kyxadious.chapter.common.entity.UserFactory.getUsers;
+
 public class Chapter2 {
 
     public void exampleForEach() {
-        User user1 = new User("Jonh", 150);
-        User user2 = new User("Maria", 120);
-        User user3 = new User("Mark", 190);
-
-        List<User> users = Arrays.asList(user1, user2, user3);
+        List<User> users = getUsers();
 
         System.out.println("#1");
         for (User user : users) {

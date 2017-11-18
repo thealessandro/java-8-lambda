@@ -1,36 +1,24 @@
 package br.com.kyxadious.chapter.four;
 
-import br.com.kyxadious.chapter.two.User;
+import br.com.kyxadious.chapter.common.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import static br.com.kyxadious.chapter.common.entity.UserFactory.getUsers;
+
 public class Chapter4 {
 
     public void examplePredicateLambda() {
-        User user1 = new User("Jonh", 150);
-        User user2 = new User("Maria", 120);
-        User user3 = new User("Mark", 190);
-
-        List<User> users = new ArrayList<>();
-        users.add(user1);
-        users.add(user2);
-        users.add(user3);
+        List<User> users = getUsers();
 
         users.removeIf(u -> u.getPoints() > 170);
         users.forEach(u -> System.out.println(u));
     }
 
     public void examplePredicate() {
-        User user1 = new User("Jonh", 150);
-        User user2 = new User("Maria", 120);
-        User user3 = new User("Mark", 190);
-
-        List<User> users = new ArrayList<>();
-        users.add(user1);
-        users.add(user2);
-        users.add(user3);
+        List<User> users = getUsers();
 
         Predicate<User> predicate = new Predicate<User>() {
             @Override

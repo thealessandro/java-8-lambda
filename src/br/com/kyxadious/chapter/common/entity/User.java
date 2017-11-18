@@ -1,4 +1,4 @@
-package br.com.kyxadious.chapter.two;
+package br.com.kyxadious.chapter.common.entity;
 
 import java.util.Objects;
 
@@ -36,6 +36,14 @@ public class User {
 
     public void setModerator(Boolean moderator) {
         this.moderator = moderator;
+    }
+
+    public void moderatorOn() {
+        setModerator(true);
+    }
+
+    public void moderatorOff() {
+        setModerator(false);
     }
 
     @Override

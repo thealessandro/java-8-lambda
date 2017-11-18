@@ -1,6 +1,6 @@
 package br.com.kyxadious.test.chapter.two;
 
-import br.com.kyxadious.chapter.two.User;
+import br.com.kyxadious.chapter.common.entity.User;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
