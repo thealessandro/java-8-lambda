@@ -1,19 +1,28 @@
 package br.com.kyxadious;
 
-import br.com.kyxadious.chapter.six.Chapter6;
+import br.com.kyxadious.chapter.seven.Chapter7;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Chapter 6:");
+        System.out.println("Chapter 7:");
+        //new Chapter7().exampleStreamAndCollector1();
+        //new Chapter7().exampleStreamAndCollector2();
+        new Chapter7().exampleStreamAndCollector3();
+
+        //System.out.println("Chapter 6:");
         //new Chapter6().exampleMethodReference1();
         //new Chapter6().exampleMethodReference2();
         //new Chapter6().exampleMethodReference3();
         //new Chapter6().exampleMethodReference4();
         //new Chapter6().exampleMethodReference5();
         //new Chapter6().exampleMethodReference6();
-        new Chapter6().exampleMethodReference7();
+        //new Chapter6().exampleMethodReference7();
+        //new Chapter6().exampleMethodReference8();
+        //new Chapter6().exampleConstructorReference9();
+        //new Chapter6().exampleConstructorReference10();
+        //new Chapter6().exampleConstructorReference11();
 
         //System.out.println("Chapter 5:");
         //new Chapter5().exampleComparator();

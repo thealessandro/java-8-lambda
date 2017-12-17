@@ -8,6 +8,13 @@ public class User {
     private Integer points;
     private Boolean moderator;
 
+    public User() {
+    }
+
+    public User(String name) {
+        this.name = name;
+    }
+
     public User(String name, Integer points) {
         this.name = name;
         this.points = points;
