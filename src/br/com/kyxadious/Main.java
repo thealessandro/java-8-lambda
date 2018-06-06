@@ -9,7 +9,13 @@ public class Main {
         System.out.println("Chapter 7:");
         //new Chapter7().exampleStreamAndCollector1();
         //new Chapter7().exampleStreamAndCollector2();
-        new Chapter7().exampleStreamAndCollector3();
+        //new Chapter7().exampleStreamAndCollector3();
+        //new Chapter7().exampleStreamAndCollector4();
+        //new Chapter7().exampleStreamAndCollector5();
+        //new Chapter7().exampleStreamAndCollector6();
+        //new Chapter7().exampleStreamAndCollector7();
+        //new Chapter7().exampleStreamAndCollector8();
+        new Chapter7().exampleStreamAndCollector9();
 
         //System.out.println("Chapter 6:");
         //new Chapter6().exampleMethodReference1();

@@ -21,6 +21,12 @@ public class User {
         this.moderator = false;
     }
 
+    public User(String name, Integer points, Boolean moderator) {
+        this.name = name;
+        this.points = points;
+        this.moderator = moderator;
+    }
+
     public String getName() {
         return name;
     }
