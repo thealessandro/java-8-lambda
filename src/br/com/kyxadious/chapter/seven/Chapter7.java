@@ -10,10 +10,23 @@ import static br.com.kyxadious.chapter.common.entity.UserFactory.getUsers;
 
 public class Chapter7 {
 
+    public void exampleStreamAndCollector10() {
+        List<User> users = getUsers();
+
+        String maxName = users.stream()
+                .max(Comparator.comparing(User::getPoints))
+                .map(User::getName)
+                .orElse("-");
+
+        System.out.println(maxName);
+    }
+
     public void exampleStreamAndCollector9() {
         List<Integer> integers = new ArrayList<>(Arrays.asList(5, 1, 4, 3, 5));
 
-        OptionalDouble average = integers.stream().mapToInt(Integer::intValue).average();
+        OptionalDouble average = integers.stream()
+                .mapToInt(Integer::intValue)
+                .average();
         double value = average.orElse(0.0);
 
         System.out.println(value);

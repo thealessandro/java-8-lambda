@@ -5,6 +5,9 @@ import java.util.List;
 
 public class UserFactory {
 
+    private UserFactory() {
+    }
+
     public static List<User> getUsers() {
         List<User> users = new ArrayList<>();
         users.add(new User("Tony", 110, false));
@@ -13,7 +16,7 @@ public class UserFactory {
         users.add(new User("jonh", 140, false));
         users.add(new User("peter", 130, false));
         users.add(new User("Mark", 190, false));
-        users.add(new User("Kennedy", 190, false));
+        users.add(new User("Kennedy", 195, false));
         return users;
     }
 

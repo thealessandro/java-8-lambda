@@ -1,12 +1,21 @@
 package br.com.kyxadious;
 
-import br.com.kyxadious.chapter.seven.Chapter7;
+import br.com.kyxadious.chapter.eight.Chapter8;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Chapter 7:");
+        System.out.println("Chapter 8:");
+        //new Chapter8().exampleStreams1();
+        //new Chapter8().exampleStreams2();
+        //new Chapter8().exampleStreams3();
+        //new Chapter8().exampleStreams4();
+        //new Chapter8().exampleStreams5();
+        //new Chapter8().exampleStreams6();
+        new Chapter8().exampleStreams7();
+
+        //System.out.println("Chapter 7:");
         //new Chapter7().exampleStreamAndCollector1();
         //new Chapter7().exampleStreamAndCollector2();
         //new Chapter7().exampleStreamAndCollector3();
@@ -15,7 +24,8 @@ public class Main {
         //new Chapter7().exampleStreamAndCollector6();
         //new Chapter7().exampleStreamAndCollector7();
         //new Chapter7().exampleStreamAndCollector8();
-        new Chapter7().exampleStreamAndCollector9();
+        //new Chapter7().exampleStreamAndCollector9();
+        //new Chapter7().exampleStreamAndCollector10();
 
         //System.out.println("Chapter 6:");
         //new Chapter6().exampleMethodReference1();
